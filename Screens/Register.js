@@ -70,6 +70,10 @@ const Register = ({ navigation }) => {
             Alert.alert("Registration Failed", "Phone Number must be at least 10 digits long");
             return;
         }
+        if(!email.trim()){
+            Alert.alert("Registration Failed", "Email Field is Required");
+            return;
+        }
         //Displays error to user if Password TextInput is empty
         if(password.length == 0){
             Alert.alert("Registration Failed", "Password Field is Required");
