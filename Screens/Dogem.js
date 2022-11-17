@@ -202,7 +202,7 @@ const App = () => {
          </View>
 
         <View style={styles.inputView}>
-        <Text style={styles.titleTextsmall}>Enter Mobile Number</Text>
+        <Text style={styles.titleTextsmall}>Enter Contact Info</Text>
           <TextInput
             style={styles.TextInput}
             value={phoneNum}
