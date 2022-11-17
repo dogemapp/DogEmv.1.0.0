@@ -99,10 +99,6 @@ const App = () => {
     4. Then reset phoneNum.
     */
     const addContact = () => {
-      if (phoneNum.length != 10) {
-            Alert.alert('Error','Please insert a correct contact number');
-            return;
-      }
       let newContacts = [...contacts];
       newContacts.push(phoneNum);
       setContacts(newContacts);
@@ -208,7 +204,6 @@ const App = () => {
             value={phoneNum}
             placeholder="Enter Contact Number"
             placeholderTextColor="#003f5c"
-            keyboardType="numeric"
             onChangeText={(value) => setPhoneNum(value)}
           />
         <Text style={styles.contact_ops_button} onPress={addContact}>Add Contact</Text>
